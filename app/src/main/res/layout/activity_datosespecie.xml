@@ -1,0 +1,495 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Especie"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/llImagenes"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:elevation="50dp"
+            android:layout_weight="57"
+            android:id="@+id/ivFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/planta" />
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_weight="43"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:elevation="20dp"
+                    android:layout_weight="50"
+                    android:id="@+id/ivFoto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fruto" />
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:elevation="20dp"
+                    android:id="@+id/ivFoto4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fruto"
+                    android:layout_weight="50"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_weight="50"
+                    android:elevation="20dp"
+                    android:id="@+id/ivFoto5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fruto" />
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:elevation="20dp"
+                    android:id="@+id/ivFoto6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fruto"
+                    android:layout_weight="50"/>
+
+
+
+
+            </LinearLayout>
+"
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutprop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llImagenes">
+
+        <TextView
+            android:id="@+id/tvPropietaro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Propietario: SENA Centro de Formacion Agroindustrial"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvFinca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Finca: La Angostura"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+       <LinearLayout android:elevation="40dp"
+        android:weightSum="100"
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutprop"
+        >
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Condiciones atmosfericas:"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:paddingRight="20dp"
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Indices de Produccion:"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:paddingRight="10dp"
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Variables de Fermentación:"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:paddingRight="10dp"
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Condiciones Edáficas:"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:paddingRight="20dp"
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout5"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+
+            android:id="@+id/textView18"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Análisis de Cacáo  :"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+         />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Bromatologicos:"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="65"
+            android:text="Fisicos:"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="32"
+            android:text=""
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="65"
+            android:text="Sensorial"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="32"
+            android:text=""
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:elevation="20dp"
+        android:id="@+id/ivSensorial"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"></ImageView>
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btNuevaLectura"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:textColor="#FFFFFF"
+        android:text="Nueva lectura"
+        android:paddingTop="17dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSensorial"></Button>
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnVerTodo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:textColor="#FFFFFF"
+        android:paddingTop="17dp"
+        android:text="Ver listado general"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNuevaLectura"></Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerTodo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

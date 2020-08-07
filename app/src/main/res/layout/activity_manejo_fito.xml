@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manejoFito">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvEnfemedades"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/frutocacao"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2 "
+            android:shadowRadius="1 "
+            android:text="Enfermedades"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvEnfemedad1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnfemedades">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/tvTitulo1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Moniliasis"
+
+                android:textSize="20sp"></TextView>
+
+
+        <ImageView
+            android:layout_below="@+id/tvTitulo1"
+            android:id="@+id/ivenfermedad1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/moniliasis"></ImageView>
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/tvTitulo1"
+            android:textSize="10sp"
+            android:id="@+id/tvEnfermedad1"
+            android:layout_toRightOf="@+id/ivenfermedad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Enfermedad causada por el hongo Moniliophthora roreri que afecta
+principalmente los fruto de cacao, la infestación de Monilia en pepino inferior a un mes de
+formación presentan sintomatología de madurez prematura, marchitamiento, secamiento y
+las mazorca con mayor de tres meses de formación se evidencia deformación del fruto,
+presencia de puntos claros o grasientos de la mazorca, cambio de coloración de la mazorca
+a color marrón recubierta sustancia de color blanco grisáceo. Esta enfermedad se presenta
+con severidad de acuerdo al manejo de cultivo, fluctuaciones climáticas y el tipo de
+variedad.">
+
+        </TextView>
+            <TextView
+                android:justificationMode="inter_word"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Recomendaiones: Para el control de moniliasis en cacao las prácticas culturas resulta un método efectivo, comprendiendo en realizar podas antes de 3 o 4 meses antes de la época de invierno en los meses de abril - mayor y octubre - noviembre; asimismo, la remoción periódica de frutos enfermo cada 15 días antes de que la mazorca o fruta de cacao esporule. Se puede hacer control de malezas con uso de guadañas y el mantenimiento de drenajes. La selección oportuna de  materiales vegetales (clones o híbridos) tolerantes a Moniliophthora roreri en sistemas agroforestales o monocultivos reduce significativamente la presencia de problemas fúngicos. Dado el caso, de que más del 30% de la plantación presente problema por monilia se requiere aplicar fungicidas como oxicloruro de cobre en dosificaciones de 300 a 400 g/100 L o 1 a 1.5 Kg/Ha o Mancozeb en dosis de 300 a 800 g/Ha cada 15 días."
+                android:layout_below="@+id/tvEnfermedad1"
+                android:layout_toRightOf="@id/ivenfermedad1">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvEnfemedad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnfemedad1">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulo2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Escoba de Bruja"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulo2"
+                android:id="@+id/ivenfermedad2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/escobadebruja"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulo2"
+                android:textSize="10sp"
+                android:id="@+id/tvEnfermedad2"
+                android:layout_toRightOf="@+id/ivenfermedad2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Esta enfermedad afecta los tejidos de crecimiento de la planta, causada
+por el hongo Crinipellis perniciosao, esta presenta diferentes síntomas dependiendo del
+estado de desarrollo. En la formación y crecimiento de ramas presenta un desarrollo
+acelerado y vigor de peciolo, con acortamiento de entre nudos, en los cojines florales no se
+presenta fecundación inhibiendo la formación de mazorca, en las mazorcas y pepinos esta
+enfermedad presenta frutos amorfos.">
+
+            </TextView>
+            <TextView
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Recomendaiones: Una oportuna selección de materiales vegetales potenciales tolerantes, reduce considerablemente los problemas por (Moniliophthora perniciosa). Las actividades culturales como la poda con antelación  de 3 a 4 meses antes la época de invierno (abril – mayo y octubre – noviembre) reduce o controla significativamente problemas fúngicos por Moniliophthora perniciosa. Durante la época seca se debe realizar monitoreos de tejido vegetal infectado o seco y remover cada 15 días. Si la infección es severa en el sistema agroforestal o monocultivo de cacao se recomienda realizar aplicaciones de síntesis química de oxicloruro de cobre en dosificaciones de 300 a 400 g/100 L o 1 a 1.5 Kg/Ha; o Mancozeb en dosis de 300 a 800 g/Ha cada 15 días."
+                android:layout_below="@+id/tvEnfermedad2"
+                android:layout_toRightOf="@id/ivenfermedad2">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvEnfemedad3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnfemedad2">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulo3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="Mazorca negra o Phytophthora"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulo3"
+                android:id="@+id/ivenfermedad3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mazorcanegra"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulo3"
+                android:textSize="10sp"
+                android:id="@+id/tvEnfermedad3"
+                android:layout_toRightOf="@+id/ivenfermedad3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Enfermedad causada por el hongo Phytophthora sp, ataca los órganos de la planta como: tallo, raíz, hojas y frutos. En los frutos inicia sobre  la parte externa de la cáscara con la presencia de mancha colorida marrón o negra recubierta de una pelusa blanquecina; por otro lado en pepinos se presenta marchitez.
+En la raíz se presenta muerte del tejido (Necrosis) presentando en el tejido manchas de color marrón y pudrimiento de la raíz, imposibilitando la absorción de nutrientes y agua, lo que causa muerte del árbol.
+En el tallo conocido como el cáncer de tronco se caracteriza por presentar áreas necróticas de color marrón y/o negro con una sustancia acuosa en la superficie de la corteza del tallo, en el tejido epidérmico presenta una coloración rojiza, una vez esta enfermedad se expanda y rodee completamente el tallo causa la muerte del árbol.
+">
+
+            </TextView>
+            <TextView
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Recomendaiones: Selección de materiales vegetales (clones o híbridos) tolerantes a Phytophthora sp en la implementación de sistemas agroforestales. Es necesario realizar podas antes de 3 o 4 meses antes de la época de invierno (abril – mayo y octubre – noviembre); asimismo, remover o cosechar frutos enfermos cada 15 días o antes de su esporulación del hongo. Si la infección es severa se recomienda aplicar insumos de síntesis química con oxicloruro de cobre en dosificaciones de 300 a 400 g/100 L o 1 a 1.5 Kg/Ha, y Mancozeb en dosis de 300 a 800 g/Ha cada 15 días."
+                android:layout_below="@+id/tvEnfermedad3"
+                android:layout_toRightOf="@id/ivenfermedad3">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvEnfemedad4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnfemedad3">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulo4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Rosellinia"
+                android:paddingTop="5dp"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulo4"
+                android:id="@+id/ivenfermedad4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/roselina"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulo4"
+                android:textSize="10sp"
+                android:id="@+id/tvEnfermedad4"
+                android:layout_toRightOf="@+id/ivenfermedad4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Recomendaciones: Esta enfermedad es la muerte del árbol, está afecta todo el sistema radical de la planta y posteriormente en el tallo. Esta se manifiesta con amarillamiento de las hojas, paloteo, clorosis, y finalmente la muerte del árbol.">
+
+            </TextView>
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Recomendaciones: Antes la presencia de Rosellinia en el cacaotal se debe realizar inmediatamente la erradicación de árboles enfermos o tejidos vegetales (ramas o troncos) y aplicar cal agrícola al suelo. Una vez realizadas esta labor cultural se recomienda aplicar agrobiológicos de Trichoderma sp en drench al suelo como acción antagonista.    "
+                android:layout_below="@+id/tvEnfermedad4"
+                android:layout_toRightOf="@id/ivenfermedad4">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvEnfemedad5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnfemedad4">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulo5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Mal del machete"
+                android:paddingTop="5dp"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulo5"
+                android:id="@+id/ivenfermedad5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maldemachete"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulo5"
+                android:textSize="10sp"
+                android:id="@+id/tvEnfermedad5"
+                android:layout_toRightOf="@+id/ivenfermedad5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Causada por el hongo (Ceractocystis fimbriata) la enfermedad empieza con la muerte de varias hojas, mientras que el resto con clorosis se marchitan hasta que el árbol muere.  El hongo invade y destruye la zona cambial haciendo que la necrosis invada toda la corteza y el árbol muera.">
+
+            </TextView>
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="Recomendaciones:Antes de la implementación del cacaotal es oportuno seleccionar clones tolerantes a Ceractocystis fimbriata como IMC-60, IMC-67, y EET-96. Dado que la infección de Ceractocystis fimbriata se manifiesta con la asociación de coleópteros con aparato bucal tipo perforador o masticador.
+Al momento de la poda se recomienda desinfectar las herramientas (tijera aérea o manual, motosierras, machetes, serruchos) en una suspensión de hipoclorito de sodio (cloro) al 1.5% o formaldehído (formol) al 10%. Es necesario revisar periódicamente el cacaotal y eliminar ramas afectadas por Ceractocystis fimbriata, dejando expuesto los tejidos vegetales a plena exposición y quemar lo antes posible. Si en el árbol el problema es severo es necesario destapar y quemar, asimismo, extraer sus raíces y aplicar cal de uso agrícola ya que su propagación en el suelo es acelerada. Se recomienda realizar aplicaciones de insecticidas con ingrediente activo de malathión,  deltametrina, y lambdacihalotrina - tiametoxam.
+"
+                android:layout_below="@+id/tvEnfermedad5"
+                android:layout_toRightOf="@id/ivenfermedad5">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPlagas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnfemedad5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plagacacao"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2 "
+            android:shadowRadius="1 "
+            android:text="Plagas"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvPlaga1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvPlagas">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitulop1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="Coclillo y/o monalonion (Monalonium dissimultun):"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulop1"
+                android:id="@+id/ivPlaga1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coclillo"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulop1"
+                android:textSize="10sp"
+                android:id="@+id/tvPlaga1"
+                android:layout_toRightOf="@+id/ivPlaga1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Es un insecto con aparato bucal en
+tubo succionador, con un exoesqueleto de color naranja, este animal succiona la savia de la
+superficie de la mazorca, provocando reducciones del tamaño de la mazorca y
+malformaciones; en la exterior de la mazorca de presenta piquetes de color negro. Esta
+plaga se debe al inadecuado manejo de cacaotal y en épocas de alta precipitación y
+humedad relativa.">
+
+            </TextView>
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Recomendaiones: Se recomienda realizar podas durante el año, eliminando ramas improductivas en el cacaotal. Al momento del establecimiento del sistema productivo es necesario implementar densidades de siembras adecuadas que eviten humedades altas dentro del sistema. Periódicamente se debe monitorear el foco de ninfas y adultos, eliminando manualmente; asimismo, realizar control de malezas. Las aplicaciones de mezcla fúngicas con Beauveria bassiana, Metarhizium anisopliae, Lecanicillium lecanii y bacteria Bacillus thuringiensis en dosis de 1gr/1L resulta un método eficiente. Dado el caso, de que el problema persista y con las prácticas mencionadas anteriormente no presentan ningún efecto se recurre a aplicaciones de síntesis química con deltametrina, malathion y lambdacihalotrina - tiametoxam cada 20 días en dosis de 250 a 400 cc/Ha.  "
+                android:layout_below="@+id/tvPlaga1"
+                android:layout_toRightOf="@id/ivPlaga1">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvPlaga2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvPlaga1">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/tvTitulop2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Carmenta Negra (Carmenta foraseminis):"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulop2"
+                android:id="@+id/ivPlaga2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carmenta"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulop2"
+                android:textSize="10sp"
+                android:id="@+id/tvPlaga2"
+                android:layout_toRightOf="@+id/ivPlaga2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Insecto perforador de la mazorca ataca a frutos menores de 4 meses, estos exhiben madurez prematura y exudaciones acuosas de coloración negra. Una vez el insecto dentro de la mazorca y en relación con otros organismos hospedadores y la entrada de humedad por los orificios de mesocarpio, fermenta el mucílago deteriorando el sabor y aroma del cacao.">
+
+            </TextView>
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Recomendaiones: Realizar podas durante el año, eliminando ramas improductivas en el cacaotal. Al momento del establecimiento del sistema productivo es necesario implementar densidades de siembras adecuadas que eviten humedades altas dentro del sistema. Eliminar manualmente los focos de ninfas y adultos, asimismo, control de arvenses con uso de guadañas. Si el problema persiste realizar aplicaciones de síntesis química de deltrametrina, malathion y lambdacihalotrina - tiametoxam cada 20 días en dosis de 250 a 400 cc/Ha.   "
+                android:layout_below="@+id/tvPlaga2"
+                android:layout_toRightOf="@id/ivPlaga2">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvPlaga3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvPlaga2">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/tvTitulop3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Hormigas o zompopos (Atta cephalotes)"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulop3"
+                android:id="@+id/ivPlaga3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hotmigas"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulop3"
+                android:textSize="10sp"
+                android:id="@+id/tvPlaga3"
+                android:layout_toRightOf="@+id/ivPlaga3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Cortan las hojas de forma de  media luna fácilmente identificable. Los zompopos pueden dejar sin hojas una planta joven en poco tiempo. En plantas adultas las partes más vulnerables son los brotes nuevos por lo que hay que mantener la vigilancia en la época de nacimiento de nuevos brotes.">
+
+            </TextView>
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Recomendaiones: Para el control de hormigas o zompopos se debe colocar franjas plásticas o textiles pegagosos en los fustes de árboles de cacao para evitar que estos suban hacia los tejidos foliares. Se debe realizar monitoreo de madrigueras y aplicar lorsban en dosis de 50 cm3/bomba "
+                android:layout_below="@+id/tvPlaga3"
+                android:layout_toRightOf="@id/ivPlaga3">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvPlaga4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvPlaga3">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/tvTitulop4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Chupadores o áfidos (Aphididae)"
+                android:textSize="20sp"></TextView>
+
+
+            <ImageView
+                android:layout_below="@+id/tvTitulop4"
+                android:id="@+id/ivPlaga4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chupadores"></ImageView>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@+id/tvTitulop4"
+                android:textSize="10sp"
+                android:id="@+id/tvPlaga4"
+                android:layout_toRightOf="@+id/ivPlaga4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Atacan específicamente los brotes, hojas, flores y los frutos jóvenes que todavía no han formado semillas. Es común encontrarlos en plantas jóvenes en edades de 5 y 7 años aproximadamente.">
+
+            </TextView>
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:justificationMode="inter_word"
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Recomendaiones: Evitar sombras excesivas y realizar seguimiento y eliminar las ninfas y adultos. Realizar podas fitosanitarias regularmente y controlar malezas dentro del cacaotal. Si el problema de insectos es intenso o de gran población realizar aplicaciones de síntesis química de deltrametrina, malathion y lambdacihalotrina - tiametoxam cada 20 días en dosis de 250 a 400 cc/Ha.    "
+                android:layout_below="@+id/tvPlaga4"
+                android:layout_toRightOf="@id/ivPlaga4">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
